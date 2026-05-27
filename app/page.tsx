@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 const WHATSAPP_NUMBER = "541133335747"
@@ -16,33 +17,86 @@ function WhatsAppIcon({ className = "w-5 h-5" }: { className?: string }) {
   )
 }
 
+const NAV_LINKS = [
+  { href: "#inicio", label: "Inicio" },
+  { href: "#servicios", label: "Servicio" },
+  { href: "#proceso", label: "Proceso" },
+  { href: "#casos", label: "Trabajos realizados" },
+  { href: "#quienes-somos", label: "Quiénes somos" },
+  { href: "#contacto", label: "Contacto" },
+]
+
 export default function HomePage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-[#333333] text-white scroll-smooth">
+
+      {/* Overlay para cerrar menú mobile al tocar afuera */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 z-30 md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+
       {/* Header */}
-      <header className="relative bg-[#333333]">
-        <div className="grid grid-cols-3 items-center px-6 max-w-7xl mx-auto leading-5 font-normal my-[-70px] border-[-px] border-[-px] py-0">
+      <header className="relative bg-[#333333] z-40">
+        <div className="grid grid-cols-3 items-center px-6 py-4 max-w-7xl mx-auto">
           {/* Izquierda: Logo */}
           <a href="#inicio" className="flex items-center">
             <img
               src="/volarex-isologo.jpg"
               alt="Volarex"
-              className="w-16 md:w-72 lg:w-80 h-auto object-contain"
+              className="h-16 md:h-24 w-auto object-contain"
             />
           </a>
 
-          {/* Centro: Nav - 5 items */}
+          {/* Centro: Nav desktop */}
           <nav className="hidden md:flex items-center justify-center gap-8 text-sm text-white/80">
-            <a href="#inicio" className="hover:text-white transition-colors">Inicio</a>
-            <a href="#servicios" className="hover:text-white transition-colors">Servicio</a>
-            <a href="#proceso" className="hover:text-white transition-colors">Proceso</a>
-            <a href="#quienes-somos" className="hover:text-white transition-colors">Quiénes somos</a>
-            <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
+            {NAV_LINKS.map(({ href, label }) => (
+              <a key={href} href={href} className="hover:text-white transition-colors">
+                {label}
+              </a>
+            ))}
           </nav>
 
-          {/* Derecha: vacio */}
-          <div className="hidden md:block" />
+          {/* Derecha: hamburger en mobile, vacío en desktop */}
+          <div className="flex justify-end">
+            <button
+              className="md:hidden text-white p-2 -mr-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
+
+        {/* Panel de navegación mobile */}
+        {isMenuOpen && (
+          <nav className="md:hidden bg-[#2a2a2a] border-t border-white/10 px-6 py-2 flex flex-col relative z-40">
+            {NAV_LINKS.map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setIsMenuOpen(false)}
+                className="text-white/80 hover:text-[#FFDE05] py-3 text-base font-medium border-b border-white/5 last:border-0 transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
+        )}
       </header>
 
       {/* Hero */}
@@ -173,6 +227,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trabajos realizados */}
+      <section id="casos" className="py-20 px-6 scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xl md:text-2xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">TRABAJOS REALIZADOS</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Resultados concretos</h2>
+          </div>
+
+          <div className="bg-[#2a2a2a] rounded-2xl p-6 md:p-8">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-white mb-1">Alcoholes del Plata</h3>
+              <p className="text-white/50 text-sm">Limpieza de fachada industrial · Planta productiva, GBA</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="relative">
+                <img
+                  src="/casos/alcoholes-antes.jpg"
+                  alt="Antes — Fachada Alcoholes del Plata"
+                  className="w-full rounded-xl object-cover aspect-[4/3]"
+                />
+                <span className="absolute top-3 left-3 bg-black/70 text-white text-xs font-semibold px-3 py-1 rounded-full tracking-wide">
+                  ANTES
+                </span>
+              </div>
+              <div className="relative">
+                <img
+                  src="/casos/alcoholes-despues.jpg"
+                  alt="Después — Fachada Alcoholes del Plata"
+                  className="w-full rounded-xl object-cover aspect-[4/3]"
+                />
+                <span className="absolute top-3 left-3 bg-[#FFDE05] text-[#333333] text-xs font-semibold px-3 py-1 rounded-full tracking-wide">
+                  DESPUÉS
+                </span>
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-white/70 max-w-3xl">
+                Limpieza profunda de fachada en planta industrial con acumulación severa de suciedad. El trabajo se realizó sin interrumpir las operaciones del establecimiento. La superficie recuperó su aspecto original, mejorando notablemente la imagen institucional del predio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quiénes somos */}
       <section id="quienes-somos" className="py-20 px-6 scroll-mt-24">
         <div className="max-w-4xl mx-auto text-center">
@@ -226,15 +326,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer - Solo logo */}
+      {/* Footer */}
       <footer className="py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-2 font-normal text-5xl">
+        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4">
           <img
             src="/volarex-isologo.jpg"
             alt="Volarex"
-            className="object-contain tracking-normal font-light text-5xl w-52 h-auto py-[-px] py-[-px] my-[-70px]"
+            className="w-52 h-auto object-contain"
           />
-          <span className="text-[#FFDE05] font-bold tracking-wider">VOLAREX</span>
+          <span className="text-[#FFDE05] font-bold tracking-wider text-3xl">VOLAREX</span>
         </div>
       </footer>
 
