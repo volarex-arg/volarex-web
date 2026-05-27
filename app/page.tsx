@@ -269,6 +269,19 @@ export default function HomePage() {
                 Limpieza profunda de fachada en planta industrial con acumulación severa de suciedad. El trabajo se realizó sin interrumpir las operaciones del establecimiento. La superficie recuperó su aspecto original, mejorando notablemente la imagen institucional del predio.
               </p>
             </div>
+
+            <div className="mt-6 border-t border-white/10 pt-6">
+              <div className="bg-[#1e1e1e] rounded-xl p-5 border border-[#FFDE05]/20 relative">
+                <span className="text-[#FFDE05] text-4xl font-serif leading-none absolute top-4 left-5 opacity-60">"</span>
+                <p className="text-white/80 italic text-base md:text-lg pl-8 pr-2">
+                  El servicio fue realmente profesional de principio a fin. Coordinaron todo de manera muy eficiente, llegaron en tiempo y forma, y el resultado superó nuestras expectativas. La fachada quedó impecable y lo más importante es que no interrumpieron en ningún momento nuestra operación. Sin dudas los volvemos a llamar.
+                </p>
+                <div className="mt-4 pl-8 flex items-center gap-2">
+                  <div className="w-8 h-px bg-[#FFDE05]/50"></div>
+                  <p className="text-[#FFDE05] text-sm font-semibold tracking-wide">Equipo de Mantenimiento — Alcoholes del Plata</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
