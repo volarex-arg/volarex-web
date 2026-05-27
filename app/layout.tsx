@@ -7,9 +7,24 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Volarex | Limpieza técnica en altura',
+  description: 'Limpieza técnica en altura para industrias, galpones, fachadas, vidrios, cartelería y paneles solares.',
+  openGraph: {
+    title: 'Volarex | Limpieza técnica en altura',
+    description: 'Limpieza técnica en altura para industrias, galpones, fachadas, vidrios, cartelería y paneles solares.',
+    url: 'https://www.volarex.com.ar',
+    siteName: 'Volarex',
+    locale: 'es_AR',
+    type: 'website',
+    images: [
+      {
+        url: '/volarex-isologo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Volarex - Limpieza técnica en altura',
+      },
+    ],
+  },
   icons: {
     icon: [
       {
@@ -35,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
