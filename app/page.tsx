@@ -283,6 +283,49 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          <div className="bg-[#2a2a2a] rounded-2xl p-6 md:p-8 mt-8">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-white mb-1">Fayser</h3>
+              <p className="text-white/50 text-sm">Limpieza exterior de chapa industrial · Parque Industrial Escobar</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="relative">
+                <img
+                  src="/Fyser/IMG_0091%202.jpg"
+                  alt="Trabajo de limpieza exterior — Fayser (1)"
+                  className="w-full rounded-xl object-cover aspect-[4/3]"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  src="/Fyser/IMG_0098%202.jpg"
+                  alt="Trabajo de limpieza exterior — Fayser (2)"
+                  className="w-full rounded-xl object-cover aspect-[4/3]"
+                />
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-white/70 max-w-3xl">
+                Trabajo de limpieza exterior sobre chapa industrial realizado en el Parque Industrial Escobar mediante dron/RPA, permitiendo intervenir superficies en altura sin necesidad de andamios y reduciendo la exposición de operarios.
+              </p>
+            </div>
+
+            <div className="mt-6 border-t border-white/10 pt-6">
+              <div className="bg-[#1e1e1e] rounded-xl p-5 border border-[#FFDE05]/20 relative">
+                <span className="text-[#FFDE05] text-4xl font-serif leading-none absolute top-4 left-5 opacity-60">"</span>
+                <p className="text-white/80 italic text-base md:text-lg pl-8 pr-2">
+                  Mejora visible del estado exterior de la superficie intervenida, con una operación más ágil y segura para el entorno industrial.
+                </p>
+                <div className="mt-4 pl-8 flex items-center gap-2">
+                  <div className="w-8 h-px bg-[#FFDE05]/50"></div>
+                  <p className="text-[#FFDE05] text-sm font-semibold tracking-wide">Resultado — Fayser</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
