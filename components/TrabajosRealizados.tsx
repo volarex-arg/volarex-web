@@ -2,6 +2,16 @@
 
 import { useRef, useState, useEffect, useCallback } from "react"
 
+const LOGOS = [
+  { src: "/logo%20alcoholes.png", alt: "Alcoholes del Plata", className: "mix-blend-screen" },
+  { src: "/logo-fyser-transparente.png", alt: "Fayser", className: "" },
+  { src: "/arbox_transparente.png", alt: "ARbox", className: "" },
+  { src: "/encopress_transparente.png", alt: "Encopress", className: "" },
+  { src: "/luxury%20outlet1.jpeg", alt: "Luxury Outlet The Palace", className: "" },
+  { src: "/grupo%20accionarjpeg.jpeg", alt: "Grupo Accionar", className: "" },
+  { src: "/tattersall_logo.png", alt: "Tattersall de Palermo", className: "" },
+]
+
 const CASES = [
   {
     id: "alcoholes",
@@ -12,22 +22,35 @@ const CASES = [
       { src: "/casos/alcoholes-sucio-nuevo.PNG", label: "ANTES", labelStyle: "bg-black/70 text-white", className: "w-full rounded-xl object-cover aspect-[4/3] object-[center_30%]", scale: true },
       { src: "/casos/al-nuevaa.jpg", label: "DESPUÉS", labelStyle: "bg-[#FFDE05] text-[#333333]", className: "w-full rounded-xl object-cover aspect-[4/3] object-[center_70%]" },
     ],
-    description: "Limpieza profunda de tanques industriales con acumulación severa de suciedad. El trabajo se realizó sin interrumpir las operaciones del establecimiento. La superficie recuperó su aspecto original, mejorando notablemente la imagen institucional del predio.",
-    quote: "El servicio fue realmente profesional de principio a fin. Coordinaron todo de manera muy eficiente, llegaron en tiempo y forma, y el resultado superó nuestras expectativas. Sin dudas los volvemos a llamar.",
-    quoteAuthor: "Equipo de Mantenimiento — Alcoholes del Plata",
+    description: "Hidrolavado profundo de tanques industriales con acumulación severa de suciedad y marcas de exposición exterior. La intervención permitió remover la suciedad adherida en la superficie, recuperar el aspecto original de los tanques y mejorar notablemente la imagen general del predio, sin interrumpir las operaciones del establecimiento.",
+    quote: "La verdad es que el trabajo fue excelente. La diferencia entre el antes y el después es muy notoria, incluso más de lo que imaginábamos. Los tanques recuperaron completamente su aspecto y realmente parecen nuevos otra vez.",
+    quoteAuthor: "Carolina, Alcoholes del Plata",
   },
   {
     id: "fayser",
-    logo: "/logo-fyser.png",
+    logo: "/logo-fyser-transparente.png",
     title: "Fayser",
-    subtitle: "Limpieza exterior de chapa industrial · Parque Industrial Escobar",
+    subtitle: "Limpieza exterior de galpón industrial · Parque Industrial Escobar",
     images: [
-      { src: "/Fyser/IMG_0091%202.jpg", label: null, labelStyle: "", className: "w-full rounded-xl object-cover aspect-[4/3] object-[15%_35%]" },
+      { src: "/Fyser/IMG_0091%202.jpg", label: null, labelStyle: "", className: "", objectPosition: "5% 35%" },
       { src: "/Fyser/IMG_0098%202.jpg", label: null, labelStyle: "", className: "w-full rounded-xl object-cover aspect-[4/3]" },
     ],
-    description: "Trabajo de limpieza exterior sobre chapa industrial realizado en el Parque Industrial Escobar mediante dron/RPA, permitiendo intervenir superficies en altura sin necesidad de andamios y reduciendo la exposición de operarios.",
-    quote: "Mejora visible del estado exterior de la superficie intervenida, con una operación más ágil y segura para el entorno industrial.",
-    quoteAuthor: "Resultado — Fayser",
+    description: "Trabajo de limpieza exterior sobre chapa industrial realizado en el Parque Industrial Escobar mediante dron.",
+    quote: "Nos ayudó a mejorar la imagen exterior del galpón de una forma práctica y segura. El trabajo se resolvió sin necesidad de andamios y sin interferir con la actividad diaria del predio.",
+    quoteAuthor: "Walter, Fayser",
+  },
+  {
+    id: "arbox",
+    logo: "/arbox_transparente.png",
+    title: "ARbox",
+    subtitle: "Limpieza exterior de galpón industrial · Parque Norlog",
+    images: [
+      { src: "/casos/arbox%20foto.jpg", label: null, labelStyle: "", className: "", objectPosition: "center" },
+      { src: "/video-fachadas.mov", label: null, labelStyle: "", className: "", isVideo: true },
+    ],
+    description: "Limpieza exterior de galpón realizada en Parque Norlog mediante dron. El trabajo permitió intervenir superficies de gran altura y extensión con una metodología ágil, segura y adaptada a las condiciones propias de un entorno industrial activo.",
+    quote: "Se pudo hacer la limpieza exterior sin afectar el movimiento diario del parque, algo muy importante en un lugar donde circulan y trabajan distintas empresas al mismo tiempo.",
+    quoteAuthor: "Karina, ARbox",
   },
 ]
 
@@ -49,9 +72,10 @@ export default function TrabajosRealizados() {
     if (paused) return
     const interval = setInterval(() => {
       goTo(current + 1)
-    }, 18000)
+    }, 25000)
     return () => clearInterval(interval)
   }, [current, paused, goTo])
+
 
   return (
     <section id="casos" className="py-16 px-6 scroll-mt-24">
@@ -90,7 +114,7 @@ export default function TrabajosRealizados() {
                   {/* Header */}
                   <div className="flex items-center gap-4">
                     {c.logo && (
-                      <img src={c.logo} alt={c.title} className="h-12 w-auto object-contain flex-shrink-0 mix-blend-screen" />
+                      <img src={c.logo} alt={c.title} className={`h-12 w-auto object-contain flex-shrink-0${'logoBlend' in c && c.logoBlend ? ' mix-blend-multiply' : ''}`} />
                     )}
                     <div>
                       <h3 className="text-2xl font-bold text-white">{c.title}</h3>
@@ -104,7 +128,13 @@ export default function TrabajosRealizados() {
                     <div className="grid grid-cols-2 gap-3 h-full">
                       {c.images.map((img, i) => (
                         <div key={i} className="relative h-full overflow-hidden rounded-xl">
-                          <img src={img.src} alt={`${c.title} ${i + 1}`} className={`w-full h-full ${'contain' in img && img.contain ? 'object-contain' : 'object-cover object-center'}${'scale' in img && img.scale ? ' scale-150 translate-y-12' : ''}`} />
+                          {'isVideo' in img && img.isVideo ? (
+                            <video autoPlay muted loop playsInline className="w-full h-full object-cover" style={'objectPosition' in img ? { objectPosition: (img as any).objectPosition } : undefined}>
+                              <source src={img.src} type="video/mp4" />
+                            </video>
+                          ) : (
+                            <img src={img.src} alt={`${c.title} ${i + 1}`} className={`w-full h-full ${'contain' in img && img.contain ? 'object-contain' : 'object-cover'}${'scale' in img && img.scale ? ' scale-150 translate-y-12' : ''}`} style={'objectPosition' in img ? { objectPosition: (img as any).objectPosition } : undefined} />
+                          )}
                           {img.label && (
                             <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-0.5 rounded-full tracking-wide ${img.labelStyle}`}>
                               {img.label}
@@ -144,6 +174,27 @@ export default function TrabajosRealizados() {
               aria-label={c.title}
             />
           ))}
+        </div>
+
+        {/* Logos clientes */}
+        <div className="mt-16 border-t border-white/10 pt-10">
+          <p className="text-center text-[#FFDE05] text-2xl font-semibold uppercase tracking-widest mb-8">Empresas que confiaron en nosotros</p>
+          <div className="flex flex-col items-center gap-8">
+            <div className="flex items-center justify-center gap-10 flex-wrap">
+              {LOGOS.slice(0, 4).map((logo) => (
+                <div key={logo.alt} className="w-36 h-24 flex items-center justify-center">
+                  <img src={logo.src} alt={logo.alt} className={`max-h-full max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity ${logo.className}`} />
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center justify-center gap-10 flex-wrap">
+              {LOGOS.slice(4).map((logo) => (
+                <div key={logo.alt} className="w-36 h-24 flex items-center justify-center">
+                  <img src={logo.src} alt={logo.alt} className={`max-h-full max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity ${logo.className}`} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
       </div>

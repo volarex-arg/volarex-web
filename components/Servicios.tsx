@@ -10,11 +10,11 @@ export default function Servicios() {
   return (
     <>
       {/* Servicios */}
-      <section id="servicios" className="py-20 px-6 scroll-mt-24">
+      <section id="servicios" className="pt-11 pb-20 px-6 scroll-mt-24">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">SERVICIOS</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Soluciones para cada necesidad</h2>
-          <p className="text-white/70 text-2xl md:text-3xl mb-12 max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Soluciones para cada necesidad</h2>
+          <p className="text-white/70 text-lg md:text-xl mb-12 max-w-3xl mx-auto">
             Trabajamos en: casas, edificios, consorcios, galpones, industrias, depósitos, concesionarios, shoppings, supermercados y parques solares.
           </p>
 
@@ -34,9 +34,6 @@ export default function Servicios() {
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">Vidrios y Ventanales</h3>
-                <p className="text-white/70 text-2xl md:text-3xl mb-6 flex-1">
-                  Ideal para: edificios, oficinas, casas con ventanales, locales comerciales, concesionarios, shoppings, supermercados.
-                </p>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
@@ -63,9 +60,6 @@ export default function Servicios() {
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">Fachadas y Estructuras</h3>
-                <p className="text-white/70 text-2xl md:text-3xl mb-6 flex-1">
-                  Ideal para: edificios, galpones, industrias, depósitos, shoppings y supermercados.
-                </p>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
@@ -80,17 +74,18 @@ export default function Servicios() {
             {/* Columna 3 - Paneles — imagen pendiente: /servicio-paneles-solares.jpg */}
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                <img
-                  src="/casos/WhatsApp%20Image%202026-02-11%20at%2014.30.50.jpeg"
-                  alt="Paneles Solares"
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src="/casos/video%20paneles.mov" type="video/mp4" />
+                </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">Paneles Solares</h3>
-                <p className="text-white/70 text-2xl md:text-3xl mb-6 flex-1">
-                  Ideal para: parques solares, campos, techos industriales y residenciales.
-                </p>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
@@ -115,7 +110,7 @@ export default function Servicios() {
                 1
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Contanos el trabajo</h3>
-              <p className="text-white/70 text-2xl md:text-3xl">
+              <p className="text-white/70 text-lg md:text-xl">
                 Elegí el servicio, enviá la ubicación y cualquier foto o video que tengas, o coordiná una visita técnica.
               </p>
             </div>
@@ -125,7 +120,7 @@ export default function Servicios() {
                 2
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Agendá un turno tentativo</h3>
-              <p className="text-white/70 text-2xl md:text-3xl">Te confirmamos por WhatsApp.</p>
+              <p className="text-white/70 text-lg md:text-xl">Te confirmamos por WhatsApp.</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
@@ -133,7 +128,7 @@ export default function Servicios() {
                 3
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Coordinamos y ejecutamos</h3>
-              <p className="text-white/70 text-2xl md:text-3xl">Nos ocupamos de la operación completa en el día acordado.</p>
+              <p className="text-white/70 text-lg md:text-xl">Nos ocupamos de la operación completa en el día acordado.</p>
             </div>
           </div>
         </div>

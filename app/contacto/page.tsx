@@ -21,17 +21,17 @@ export default function ContactoPage() {
         <div className="w-full max-w-2xl">
 
           {/* Etiqueta */}
-          <p className="text-center text-6xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">
+          <p className="text-center text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">
             CONTACTO
           </p>
 
           {/* Tarjeta principal */}
           <div className="bg-[#2a2a2a] rounded-3xl p-10 md:p-16 border border-white/10">
 
-            <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">
               Contactanos
             </h1>
-            <p className="text-white/60 text-2xl md:text-3xl text-center mb-12 max-w-xl mx-auto">
+            <p className="text-white/60 text-lg md:text-xl text-center mb-12 max-w-xl mx-auto">
               Coordiná una visita técnica o solicitá una cotización para trabajos de limpieza en altura.
             </p>
 

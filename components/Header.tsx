@@ -13,7 +13,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="relative bg-[#333333] z-40">
+    <header className="sticky top-0 bg-[#333333] z-40">
       {isMenuOpen && (
         <div
           className="fixed inset-0 z-30 md:hidden"
@@ -27,12 +27,12 @@ export default function Header() {
           <img
             src="/volarex-isologo-recortado.jpg"
             alt="Volarex"
-            className="h-[90px] md:h-[134px] w-auto object-contain"
+            className="h-[72px] md:h-[107px] w-auto object-contain"
           />
         </a>
 
         {/* Nav desktop */}
-        <nav className="hidden md:flex items-center justify-center gap-10 text-xl text-white/80">
+        <nav className="hidden md:flex items-center justify-center gap-10 text-base text-white/80">
           {NAV_LINKS.map(({ href, label }) => (
             <a key={href} href={href} className="hover:text-white transition-colors">
               {label}
