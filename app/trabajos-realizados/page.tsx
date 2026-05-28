@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import TrabajosRealizados from "@/components/TrabajosRealizados"
 
 export const metadata: Metadata = {
@@ -14,16 +15,7 @@ export default function TrabajosRealizadosPage() {
 
       <TrabajosRealizados />
 
-      <footer className="py-10 px-6 border-t border-white/10">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-3">
-          <img
-            src="/volarex-isologo-recortado.jpg"
-            alt="Volarex"
-            className="w-6 h-auto object-contain"
-          />
-          <span className="text-[#FFDE05] font-bold tracking-wider text-lg">VOLAREX</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

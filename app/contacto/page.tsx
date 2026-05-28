@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 const WHATSAPP_NUMBER = "541133335747"
 const WHATSAPP_URL = `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent("Hola, quiero solicitar una visita técnica para un trabajo de limpieza en altura.")}&type=phone_number&app_absent=0`
@@ -86,16 +87,7 @@ export default function ContactoPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="py-10 px-6 border-t border-white/10">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-3">
-          <img
-            src="/volarex-logo.jpg"
-            alt="Volarex"
-            className="h-[120px] w-auto object-contain"
-          />
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   )
