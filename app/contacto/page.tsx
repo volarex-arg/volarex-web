@@ -17,8 +17,8 @@ export default function ContactoPage() {
       <Header />
 
       {/* Contenido principal */}
-      <main className="flex-1 flex items-start justify-center px-6 pt-10 pb-20">
-        <div className="w-full max-w-2xl">
+      <main className="flex-1 flex items-start justify-center px-6 pt-10 pb-32">
+        <div className="w-full max-w-4xl">
 
           {/* Etiqueta */}
           <p className="text-center text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">
@@ -77,8 +77,8 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <p className="text-white/40 text-lg font-semibold uppercase tracking-widest mb-1">Horarios</p>
-                  <p className="text-white text-xl font-medium">Lunes a viernes <span className="text-white/60">8:00 – 18:00</span></p>
-                  <p className="text-white text-xl font-medium">Sábados <span className="text-white/60">8:00 – 13:00</span></p>
+                  <p className="text-white text-xl font-medium whitespace-nowrap">Lunes a viernes <span className="text-white/60">8:00 – 18:00</span></p>
+                  <p className="text-white text-xl font-medium whitespace-nowrap">Sábados <span className="text-white/60">8:00 – 13:00</span></p>
                 </div>
               </div>
 
