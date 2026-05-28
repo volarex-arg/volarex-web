@@ -22,11 +22,15 @@ export default function Servicios() {
             {/* Columna 1 - Vidrios */}
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                <img
-                  src="/foto-edificio.jpg"
-                  alt="Vidrios y Ventanales"
-                  className="w-full h-full object-cover object-[80%_0%] scale-125"
-                />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover object-[center_15%]"
+                >
+                  <source src="/casos/WhatsApp%20Video%202026-02-11%20at%2014.38.25.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">Vidrios y Ventanales</h3>

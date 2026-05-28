@@ -17,9 +17,9 @@ export default function TrabajosRealizados() {
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <div className="relative">
               <img
-                src="/casos/alcoholes-antes.jpg"
+                src="/casos/alcoholes-sucio-nuevo.PNG"
                 alt="Antes — Fachada Alcoholes del Plata"
-                className="w-full rounded-xl object-cover aspect-[4/3]"
+                className="w-full rounded-xl object-cover aspect-[3/4] object-[center_30%]"
               />
               <span className="absolute top-3 left-3 bg-black/70 text-white text-xs font-semibold px-3 py-1 rounded-full tracking-wide">
                 ANTES
@@ -27,9 +27,9 @@ export default function TrabajosRealizados() {
             </div>
             <div className="relative">
               <img
-                src="/casos/alcoholes-despues.jpg"
+                src="/casos/al-nuevaa.jpg"
                 alt="Después — Fachada Alcoholes del Plata"
-                className="w-full rounded-xl object-cover aspect-[4/3]"
+                className="w-full rounded-xl object-cover aspect-[3/4] object-[center_70%]"
               />
               <span className="absolute top-3 left-3 bg-[#FFDE05] text-[#333333] text-xs font-semibold px-3 py-1 rounded-full tracking-wide">
                 DESPUÉS
