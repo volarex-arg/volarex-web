@@ -77,8 +77,8 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <p className="text-white/40 text-lg font-semibold uppercase tracking-widest mb-1">Horarios</p>
-                  <p className="text-white text-xl font-medium whitespace-nowrap">Lunes a viernes <span className="text-white/60">8:00 – 18:00</span></p>
-                  <p className="text-white text-xl font-medium whitespace-nowrap">Sábados <span className="text-white/60">8:00 – 13:00</span></p>
+                  <p className="text-white text-base md:text-xl font-medium">Lunes a viernes <span className="text-white/60">8:00 – 18:00</span></p>
+                  <p className="text-white text-base md:text-xl font-medium">Sábados <span className="text-white/60">8:00 – 13:00</span></p>
                 </div>
               </div>
 
