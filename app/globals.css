@@ -90,3 +90,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Slider CSS-only: flechas y dots */
+.slide-prev-0, .slide-prev-1, .slide-prev-2,
+.slide-next-0, .slide-next-1, .slide-next-2 {
+  display: none;
+}
+
+#casos:has(#caso-0:checked) .slide-prev-0,
+#casos:has(#caso-0:checked) .slide-next-0 { display: flex; }
+
+#casos:has(#caso-1:checked) .slide-prev-1,
+#casos:has(#caso-1:checked) .slide-next-1 { display: flex; }
+
+#casos:has(#caso-2:checked) .slide-prev-2,
+#casos:has(#caso-2:checked) .slide-next-2 { display: flex; }
+
+#casos:has(#caso-0:checked) .slide-dot-0,
+#casos:has(#caso-1:checked) .slide-dot-1,
+#casos:has(#caso-2:checked) .slide-dot-2 {
+  background-color: #FFDE05;
+  width: 2rem;
+}

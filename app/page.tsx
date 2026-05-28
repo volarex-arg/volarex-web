@@ -17,9 +17,9 @@ export default function HomePage() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-[center_40%] z-0"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] z-0"
         >
-          <source src="/video-dron.mov" type="video/mp4" />
+          <source src="/casos/video-pag-principal-ultimo.mov" type="video/mp4" />
         </video>
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/60 z-10" />
@@ -44,6 +44,7 @@ export default function HomePage() {
           Contamos con las certificaciones correspondientes de ANAC para realizar operaciones de limpieza en altura con drones, trabajando con pilotos habilitados y protocolos de seguridad adaptados a cada entorno.
         </p>
         </div>
+
       </section>
 
 
