@@ -79,8 +79,12 @@ export default function Servicios() {
 
             {/* Columna 3 - Paneles — imagen pendiente: /servicio-paneles-solares.jpg */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-[#1e1e1e] flex items-center justify-center">
-                <span className="text-white/20 text-sm font-mono">/servicio-paneles-solares.jpg</span>
+              <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+                <img
+                  src="/casos/WhatsApp%20Image%202026-02-11%20at%2014.30.50.jpeg"
+                  alt="Paneles Solares"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">Paneles Solares</h3>

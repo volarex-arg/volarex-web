@@ -33,38 +33,21 @@ export default function HomePage() {
           VOLAREX
         </h1>
         <p className="text-2xl md:text-3xl text-white/70 mb-36">
-          Limpieza en altura sin riesgo humano
+          Limpiamos donde otros no llegan
         </p>
         <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">NOSOTROS</p>
-        <p className="text-white/60 text-2xl md:text-3xl max-w-3xl mx-auto mb-12">
-          Somos una empresa especializada en limpieza técnica en altura mediante tecnología de drones. Nuestro enfoque elimina los riesgos asociados al trabajo en altura tradicional, reduciendo tiempos de ejecución y complejidad operativa. Trabajamos con edificios, industrias, parques solares y todo tipo de estructuras que requieran limpieza profesional sin poner en riesgo a las personas.
+        <p className="text-white/60 text-lg md:text-xl max-w-3xl mx-auto mb-12">
+          Somos una empresa de tecnología aplicada a la limpieza en altura. Combinamos drones, hidrolavado profesional y equipamiento especializado para resolver trabajos complejos en edificios, industrias, parques solares, galpones y estructuras de difícil acceso.
+          <br /><br />
+          Nuestro enfoque permite minimizar riesgos operativos, reducir la exposición de personas a trabajos en altura y ejecutar cada proyecto de forma más segura, eficiente y profesional.
+          <br /><br />
+          Contamos con las certificaciones correspondientes de ANAC para realizar operaciones de limpieza en altura con drones, trabajando con pilotos habilitados y protocolos de seguridad adaptados a cada entorno.
         </p>
         </div>
       </section>
 
-      {/* Contacto — CTA */}
-      <section id="contacto" className="py-20 px-6 scroll-mt-24">
-        <div className="max-w-4xl mx-auto bg-[#2a2a2a] rounded-2xl p-10 md:p-14 text-center">
-          <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">CONTACTO</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            ¿Querés cotizar un trabajo en altura?
-          </h2>
-          <p className="text-white/60 text-2xl md:text-3xl max-w-xl mx-auto mb-10">
-            Contactanos para coordinar una visita técnica o recibir una propuesta a medida.
-          </p>
-          <a
-            href="/contacto"
-            className="inline-flex items-center gap-2 bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold rounded-full px-8 py-4 transition-colors"
-          >
-            Ir a contacto
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      </section>
 
-      <Footer />
+<Footer />
 
     </div>
   )
