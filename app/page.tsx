@@ -19,7 +19,7 @@ export default function HomePage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover object-[center_20%] z-0"
         >
-          <source src="/casos/video-pag-principal-ultimo.mov" type="video/mp4" />
+          <source src="/casos/video-pag-principal-ultimoo.mov" type="video/mp4" />
         </video>
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/60 z-10" />
@@ -48,7 +48,7 @@ export default function HomePage() {
       </section>
 
 
-<Footer />
+<Footer showAnac />
 
     </div>
   )

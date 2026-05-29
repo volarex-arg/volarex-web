@@ -111,7 +111,7 @@ export default function Servicios() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Contanos el trabajo</h3>
               <p className="text-white/70 text-lg md:text-xl">
-                Elegí el servicio, enviá la ubicación y cualquier foto o video que tengas, o coordiná una visita técnica.
+                Seleccioná el servicio que necesitás, compartinos la ubicación y adjuntá fotos o videos del lugar. También podés coordinar una visita técnica para evaluar el trabajo en detalle.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function Servicios() {
                 2
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Agendá un turno tentativo</h3>
-              <p className="text-white/70 text-lg md:text-xl">Te confirmamos por WhatsApp.</p>
+              <p className="text-white/70 text-lg md:text-xl">Te confirmamos disponibilidad y próximos pasos a seguir por WhatsApp.</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
@@ -128,7 +128,7 @@ export default function Servicios() {
                 3
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">Coordinamos y ejecutamos</h3>
-              <p className="text-white/70 text-lg md:text-xl">Nos ocupamos de la operación completa en el día acordado.</p>
+              <p className="text-white/70 text-lg md:text-xl">Nos ocupamos de la operación completa en el día acordado, con personal especializado y el equipo adecuado para cada trabajo.</p>
             </div>
           </div>
         </div>
