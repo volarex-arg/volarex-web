@@ -1,10 +1,5 @@
 import { Button } from "@/components/ui/button"
-
-const WHATSAPP_NUMBER = "541133335747"
-
-function whatsappUrl(text: string) {
-  return `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}&type=phone_number&app_absent=0`
-}
+import { whatsappUrl } from "@/lib/constants"
 
 export default function Servicios() {
   return (
@@ -29,7 +24,7 @@ export default function Servicios() {
                   playsInline
                   className="w-full h-full object-cover object-[center_15%]"
                 >
-                  <source src="/casos/WhatsApp%20Video%202026-02-11%20at%2014.38.25.mp4" type="video/mp4" />
+                  <source src="/casos/video-vidrios.mp4" type="video/mp4" />
                 </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
@@ -55,7 +50,7 @@ export default function Servicios() {
                   playsInline
                   className="w-full h-full object-cover object-[center_20%]"
                 >
-                  <source src="/video-fachadas.mov" type="video/mp4" />
+                  <source src="/video-fachadas.mp4" type="video/mp4" />
                 </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
@@ -81,7 +76,7 @@ export default function Servicios() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="/casos/video%20paneles.mov" type="video/mp4" />
+                  <source src="/casos/video-paneles.mp4" type="video/mp4" />
                 </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
@@ -139,7 +134,7 @@ export default function Servicios() {
         <div className="max-w-4xl mx-auto bg-[#2a2a2a] rounded-2xl p-10 text-center">
           <h3 className="text-3xl font-bold text-[#FFDE05] mb-4">Visita técnica</h3>
           <p className="text-white/70">
-            Relevamos el lugar, definimos método, medidas y seguridad. Coordinación y cotización por WhatsApp.
+            Evaluamos el lugar, definimos el método de trabajo y revisamos las condiciones de seguridad. Luego te enviamos la cotización por WhatsApp.
           </p>
         </div>
       </section>

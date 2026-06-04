@@ -1,22 +1,22 @@
 const LOGOS = [
-  { src: "/logo%20alcoholes.png", alt: "Alcoholes del Plata", className: "mix-blend-screen" },
+  { src: "/logo-alcoholes.png", alt: "Alcoholes del Plata", className: "mix-blend-screen" },
   { src: "/logo-fyser-transparente.png", alt: "Fayser", className: "" },
   { src: "/arbox_transparente.png", alt: "ARbox", className: "" },
   { src: "/encopress_transparente.png", alt: "Encopress", className: "" },
-  { src: "/luxury%20outlet1.jpeg", alt: "Luxury Outlet The Palace", className: "" },
-  { src: "/grupo%20accionarjpeg.jpeg", alt: "Grupo Accionar", className: "" },
-  { src: "/tattersall_logo.png", alt: "Tattersall de Palermo", className: "" },
+  { src: "/empresas/luxury-outlet1.jpg", alt: "Luxury Outlet The Palace", className: "" },
+  { src: "/empresas/grupo-accionar.jpg", alt: "Grupo Accionar", className: "" },
+  { src: "/empresas/tattersall.jpg", alt: "Tattersall de Palermo", className: "" },
 ]
 
 const CASES = [
   {
     id: "alcoholes",
-    logo: "/logo%20alcoholes.png",
+    logo: "/logo-alcoholes.png",
     title: "Alcoholes del Plata",
     subtitle: "Limpieza de tanques industriales · Parque Industrial de Pilar",
     images: [
-      { src: "/casos/alcoholes-sucio-nuevo.PNG", label: "ANTES", labelStyle: "bg-black/70 text-white", className: "w-full rounded-xl object-cover aspect-[4/3] object-[center_30%]", scale: true },
-      { src: "/casos/al-nuevaa.jpg", label: "DESPUÉS", labelStyle: "bg-[#FFDE05] text-[#333333]", className: "w-full rounded-xl object-cover aspect-[4/3] object-[center_70%]" },
+      { src: "/casos/Alcoholes-sucio.jpg", label: "ANTES", labelStyle: "bg-black/70 text-white", objectPosition: "center 60%" },
+      { src: "/casos/alcoholes-nuevo.jpg", label: "DESPUÉS", labelStyle: "bg-[#FFDE05] text-[#333333]" },
     ],
     description: "Hidrolavado profundo de tanques industriales con acumulación severa de suciedad y marcas de exposición exterior. La intervención permitió remover la suciedad adherida en la superficie, recuperar el aspecto original de los tanques y mejorar notablemente la imagen general del predio, sin interrumpir las operaciones del establecimiento.",
     quote: "La verdad es que el trabajo fue excelente. La diferencia entre el antes y el después es muy notoria, incluso más de lo que imaginábamos. Los tanques recuperaron completamente su aspecto y realmente parecen nuevos otra vez.",
@@ -28,8 +28,8 @@ const CASES = [
     title: "Fayser",
     subtitle: "Limpieza exterior de galpón industrial · Parque Industrial Escobar",
     images: [
-      { src: "/Fyser/IMG_0091%202.jpg", label: null, labelStyle: "", className: "", objectPosition: "5% 35%" },
-      { src: "/Fyser/IMG_0098%202.jpg", label: null, labelStyle: "", className: "w-full rounded-xl object-cover aspect-[4/3]" },
+      { src: "/Fyser/IMG_0091-2.jpg", label: null, labelStyle: "", objectPosition: "5% 35%" },
+      { src: "/Fyser/IMG_0098-2.jpg", label: null, labelStyle: "" },
     ],
     description: "Trabajo de limpieza exterior sobre chapa industrial realizado en el Parque Industrial Escobar mediante dron.",
     quote: "Nos ayudó a mejorar la imagen exterior del galpón de una forma práctica y segura. El trabajo se resolvió sin necesidad de andamios y sin interferir con la actividad diaria del predio.",
@@ -41,8 +41,8 @@ const CASES = [
     title: "ARbox",
     subtitle: "Limpieza exterior de galpón industrial · Parque Norlog",
     images: [
-      { src: "/casos/arbox%20foto.jpg", label: null, labelStyle: "", className: "", objectPosition: "center" },
-      { src: "/video-fachadas.mov", label: null, labelStyle: "", className: "", isVideo: true },
+      { src: "/casos/arbox-foto.jpg", label: null, labelStyle: "", objectPosition: "center" },
+      { src: "/video-fachadas.mp4", label: null, labelStyle: "", isVideo: true },
     ],
     description: "Limpieza exterior de galpón realizada en Parque Norlog mediante dron. El trabajo permitió intervenir superficies de gran altura y extensión con una metodología ágil, segura y adaptada a las condiciones propias de un entorno industrial activo.",
     quote: "Se pudo hacer la limpieza exterior sin afectar el movimiento diario del parque, algo muy importante en un lugar donde circulan y trabajan distintas empresas al mismo tiempo.",

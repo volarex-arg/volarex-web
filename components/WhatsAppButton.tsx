@@ -1,9 +1,9 @@
-const WHATSAPP_NUMBER = "541133335747"
+import { whatsappUrl } from "@/lib/constants"
 
 export default function WhatsAppButton() {
   return (
     <a
-      href={`https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent("Hola, quiero solicitar una visita técnica para un trabajo de limpieza en altura.")}&type=phone_number&app_absent=0`}
+      href={whatsappUrl("Hola, quiero solicitar una visita técnica para un trabajo de limpieza en altura.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
