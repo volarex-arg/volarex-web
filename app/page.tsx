@@ -35,7 +35,7 @@ export default function HomePage() {
         </p>
         <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">NOSOTROS</p>
         <p className="text-white/60 text-lg md:text-xl max-w-3xl mx-auto mb-12">
-          Somos una empresa de tecnología aplicada a la limpieza en altura. Combinamos drones, hidrolavado profesional y equipamiento especializado para resolver trabajos complejos en edificios, industrias, parques solares, galpones y estructuras de difícil acceso.
+          Somos una empresa de limpieza en altura que aplica tecnología para resolver trabajos complejos. Combinamos drones, hidrolavado profesional y equipamiento especializado para trabajar en edificios, industrias, parques solares, galpones y estructuras de difícil acceso.
           <br /><br />
           Nuestro enfoque permite minimizar riesgos operativos, reducir la exposición de personas a trabajos en altura y ejecutar cada proyecto de forma más segura, eficiente y profesional.
           <br /><br />
