@@ -1,9 +1,9 @@
-import { whatsappUrl } from "@/lib/constants"
+import { WHATSAPP_URL } from "@/lib/constants"
 
 export default function WhatsAppButton() {
   return (
     <a
-      href={whatsappUrl("Hola, quiero solicitar una visita técnica para un trabajo de limpieza en altura.")}
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"

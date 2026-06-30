@@ -20,7 +20,7 @@ const CASES = [
     ],
     description: "Hidrolavado profundo de tanques industriales con acumulación severa de suciedad y marcas de exposición exterior. La intervención permitió remover la suciedad adherida en la superficie, recuperar el aspecto original de los tanques y mejorar notablemente la imagen general del predio, sin interrumpir las operaciones del establecimiento.",
     quote: "La verdad es que el trabajo fue excelente. La diferencia entre el antes y el después es muy notoria, incluso más de lo que imaginábamos. Los tanques recuperaron completamente su aspecto y realmente parecen nuevos otra vez.",
-    quoteAuthor: "Carolina, Alcoholes del Plata",
+    quoteAuthor: "Carlos, Alcoholes del Plata",
   },
   {
     id: "fayser",

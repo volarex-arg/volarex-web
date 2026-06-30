@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { whatsappUrl } from "@/lib/constants"
+import { WHATSAPP_URL } from "@/lib/constants"
 
 export default function Servicios() {
   return (
@@ -33,7 +33,7 @@ export default function Servicios() {
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
                 >
-                  <a href={whatsappUrl("Hola! Quiero cotizar Vidrios y Ventanales con Volarex. ¿Me piden los datos?")} target="_blank" rel="noopener noreferrer">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     Cotizar
                   </a>
                 </Button>
@@ -59,7 +59,7 @@ export default function Servicios() {
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
                 >
-                  <a href={whatsappUrl("Hola! Quiero cotizar Fachadas y Estructuras con Volarex. ¿Me piden los datos?")} target="_blank" rel="noopener noreferrer">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     Cotizar
                   </a>
                 </Button>
@@ -85,7 +85,7 @@ export default function Servicios() {
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
                 >
-                  <a href={whatsappUrl("Hola! Quiero cotizar Paneles Solares con Volarex. ¿Me piden los datos?")} target="_blank" rel="noopener noreferrer">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     Cotizar
                   </a>
                 </Button>
