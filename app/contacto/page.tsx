@@ -1,12 +1,13 @@
-import type { Metadata } from 'next'
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { WHATSAPP_URL } from "@/lib/constants"
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: 'Contacto | Volarex',
   description: 'Contactá a Volarex para coordinar una visita técnica o solicitar una cotización de limpieza en altura.',
-}
+  path: '/contacto',
+})
 
 export default function ContactoPage() {
   return (

@@ -76,7 +76,7 @@ export default function TrabajosRealizados() {
     <section id="casos" className="py-16 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase">TRABAJOS REALIZADOS</p>
+          <h1 className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase">TRABAJOS REALIZADOS</h1>
         </div>
 
         {/* Slider — CSS puro, sin JavaScript */}
