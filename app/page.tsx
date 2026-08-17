@@ -35,11 +35,11 @@ export default function HomePage() {
         </p>
         <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">NOSOTROS</p>
         <p className="text-white/60 text-lg md:text-xl max-w-3xl mx-auto mb-12">
-          Somos una empresa de limpieza que aplica tecnología para resolver trabajos complejos. Combinamos drones, hidrolavado profesional y equipamiento especializado para trabajar en locales comerciales, concesionarias, edificios, industrias, parques solares, galpones y superficies de difícil acceso.
+          Somos una empresa de limpieza que aplica tecnología para resolver trabajos complejos. Integramos drones, sistemas profesionales de hidrolavado y equipamiento especializado. Esto nos permite trabajar en locales comerciales, concesionarias, edificios, industrias, parques solares, galpones y superficies de difícil acceso.
           <br /><br />
-          Nuestro enfoque permite minimizar riesgos operativos, reducir la exposición de personas a trabajos en altura y ejecutar cada proyecto de forma más segura, eficiente y profesional.
+          Nuestro enfoque reduce los riesgos operativos y la exposición de personas a trabajos en altura, permitiéndonos ejecutar cada proyecto de manera segura, eficiente y profesional.
           <br /><br />
-          Contamos con las certificaciones correspondientes de ANAC para realizar operaciones de limpieza en altura con drones, trabajando con pilotos habilitados y protocolos de seguridad adaptados a cada entorno.
+          Contamos con las certificaciones correspondientes de ANAC para realizar operaciones de limpieza con drones, además de pilotos habilitados y protocolos de seguridad adaptados a cada entorno.
         </p>
         </div>
 
