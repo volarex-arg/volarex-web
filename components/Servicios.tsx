@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { WHATSAPP_URL } from "@/lib/constants"
 
@@ -7,14 +8,14 @@ export default function Servicios() {
       {/* Servicios */}
       <section id="servicios" className="pt-11 pb-20 px-6 scroll-mt-24">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">SERVICIOS</p>
+          <h1 className="text-3xl md:text-4xl tracking-[0.35em] text-[#FFDE05] font-semibold uppercase mb-4">SERVICIOS</h1>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Soluciones para cada necesidad</h2>
           <p className="text-white/70 text-lg md:text-xl mb-12 max-w-3xl mx-auto">
-            Trabajamos en: casas, edificios, consorcios, galpones, industrias, depósitos, concesionarios, shoppings, supermercados y parques solares.
+            Trabajamos en: casas, edificios, consorcios, galpones, industrias, depósitos, concesionarios, shoppings y supermercados.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {/* Columna 1 - Vidrios */}
+            {/* Columna 1 - Edificios */}
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                 <video
@@ -28,7 +29,7 @@ export default function Servicios() {
                 </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Vidrios y Ventanales</h3>
+                <h3 className="text-2xl font-bold text-white mb-3">Edificios</h3>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
@@ -40,7 +41,7 @@ export default function Servicios() {
               </div>
             </div>
 
-            {/* Columna 2 - Fachadas — imagen pendiente: /servicio-fachadas.jpg */}
+            {/* Columna 2 - Industrias y Galpones */}
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                 <video
@@ -54,7 +55,7 @@ export default function Servicios() {
                 </video>
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Fachadas y Estructuras</h3>
+                <h3 className="text-2xl font-bold text-white mb-3">Industrias y Galpones</h3>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
@@ -66,21 +67,19 @@ export default function Servicios() {
               </div>
             </div>
 
-            {/* Columna 3 - Paneles — imagen pendiente: /servicio-paneles-solares.jpg */}
+            {/* Columna 3 - Locales Comerciales */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src="/casos/video-paneles.mp4" type="video/mp4" />
-                </video>
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+                <Image
+                  src="/limpieza-locales.png"
+                  alt="Limpieza profesional de los ventanales de un local comercial"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover object-[center_65%]"
+                />
               </div>
               <div className="bg-[#2a2a2a] rounded-2xl p-6 flex flex-col flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Paneles Solares</h3>
+                <h3 className="text-2xl font-bold text-white mb-3">Locales Comerciales</h3>
                 <Button
                   asChild
                   className="w-full rounded-full bg-[#FFDE05] text-[#333333] hover:bg-[#FFDE05]/90 font-semibold mt-auto"
